@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "Node16",
+    "target": "ES2020",
+    "lib": ["ES2015"],
+    "importHelpers": true,
+    "outDir": "./bin",
+    "rootDir": "./",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node16",
+  },
+  "include": ["./src/**/*", "./node_modules", "./package.json", "./package-lock.json", "src/index.ts"]
+}

@@ -1,0 +1,7 @@
+{
+    "$schema": "./scheme/settings.json",
+    "componentType": "function",
+    "fileExtension": "ts",
+    "sheetFileExtension": "sass",
+    "testFileExtension": "spec"
+}

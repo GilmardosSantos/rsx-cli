@@ -1,0 +1,42 @@
+{
+  "name": "rsx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/src/index.js",
+  "types": "./bin/src/index.d.ts",
+  "bin": {
+    "rsx": "./bin/src/index.js"
+  },
+
+  "type": "module",
+  "files": [
+    "./bin"
+  ],
+  "scripts": {
+    "start": "rsx",
+    "clean": "rm -rf bin",
+    "build": "npm run clean && tsc && npm unlink && npm link",
+    "test": "npx tsx src/index.ts"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-table": "^0.3.11",
+    "commander": "^11.1.0",
+    "figlet": "^1.7.0",
+    "inquirer": "^9.2.12",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "@types/cli-table": "^0.3.4",
+    "@types/commander": "^2.12.2",
+    "@types/figlet": "^1.5.8",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.11.6",
+    "@types/shelljs": "^0.8.15",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [],
+  "author": "Atno",
+  "license": "ISC"
+}
